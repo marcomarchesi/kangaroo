@@ -51,6 +51,7 @@ Here to setup the build
             f.write(yaml.dump(self.config))
     
     def show_logo(self):
+        #TODO
         pass
 
     def show_build(self):
