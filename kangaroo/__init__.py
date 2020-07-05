@@ -3,6 +3,7 @@ Kangaroo versioning
 '''
 import yaml
 import os
+import re
 
 
 # singleton
@@ -65,3 +66,15 @@ Here to setup the build
             self.config = {'project_name': self.project_name, 'build': self.build, 'version': self.version}
         # write the update .kangaroo version
         self._write()
+    
+    def update_setup_py(self):
+
+        regex = 'version=\"(.*)\"'
+        with open('setup.py') as f:
+            content = f.read()
+        with open('setup.py', 'w') as f:
+            updated_version= 'version="%s.%s"' % (self.version, self.build)
+            updated_content = re.sub(regex, updated_version, content)
+            f.write(updated_content)
+            
+

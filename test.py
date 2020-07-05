@@ -4,6 +4,8 @@ testing kangaroo
 
 from kangaroo import Kangaroo
 
-app = Kangaroo('kangaroo-test')
-app.update_version('1.0.2')
+app = Kangaroo('kangaroo')
 app.show_build()
+
+# update the version number on setup.py
+app.update_setup_py()
