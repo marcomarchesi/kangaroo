@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 package = 'PyYAML'
 try:
-    return __import__(package)
+    print(__import__(package))
 except ImportError:
     print("Please install PyYAML before kangaroo-build")
 
