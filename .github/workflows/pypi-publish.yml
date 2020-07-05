@@ -22,6 +22,7 @@ jobs:
         pip install setuptools wheel twine
     - name: Test
       run: |
+        pip install pyyaml
         python test.py
     - name: Build and publish
       env:
