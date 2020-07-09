@@ -8,7 +8,7 @@ except ImportError:
 
 setup(
    name="kangaroo-build",
-   version="1.0.13.22",
+   version="1.0.13.23",
    description="keep track of your build number, that's it.",
    long_description="a build tracker",
    author="Marco Marchesi",
