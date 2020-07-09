@@ -1,4 +1,4 @@
-# Kangaroo ![PyPI](https://github.com/marcomarchesi/kangaroo/workflows/PyPI/badge.svg?event=push)
+# Kangaroo ![build](https://github.com/marcomarchesi/kangaroo/workflows/PyPI/badge.svg?event=push)
 
 
 
